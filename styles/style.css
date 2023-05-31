@@ -323,7 +323,6 @@ table {
     .parts{
       width: 100%;
       margin: 0;
-      display-content: center ;
     }
     table{
       width: 20%;   
@@ -335,8 +334,7 @@ table {
         display: block;
         font-size: 10px;
       }
-      table td
-  }
+    }
 
    /* Threats page */
 
