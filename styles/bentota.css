@@ -105,6 +105,11 @@ display: initial;
   margin-inline: 10px;
   box-shadow: 20px 20px rgba(64, 196, 174, 0.7) ;
 }
+
+.images :hover{
+  border-color: #492904;
+  box-shadow: 20px 20px none;
+}
 /*----------------------------------------------------------------*/
 
 /* The description*/
