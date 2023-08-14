@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+  <html lang="en">
+    <head>
+      <!---------------------------------------------------------------------------->
+      <link rel="icon" type="image/x-icon" href="Images/icon.jpeg">
+      <!---------------------------------------------------------------------------->
+      <meta charset="UTF-8">
+      <meta name="description" content="Home page">
+      <meta name="keywords" content="HTML, CSS">
+      <meta name="author" content="Kavindi De Zoysa">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="stylesheet" href="styles/style.css">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gravitas+One&family=Marmelad&family=Mogra&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <title>
+        Home Page
+      </title>
+    </head>
+    <body class ="ticket">
+        <header>
+            <a href="index.html"><img src="Images/icon.jpeg" class="logo"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">Menu</label>
+                <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Turtle Catergories</a></li>
+                    <li><a href="threats.html">Threats</a></li>
+                    <li><a href="hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
+                    <li><a href="bentota.html">Other Turtle Hatcheries</a>
+                    <ul>
+                    <li><a href="bentota.html">Bentota</a></li>
+                    <li><a href="kosgoda.html">Kosgoda</a></li>
+                    </ul></li>
+                <li><a href="purchaseAndDonate.html">Purchase and Donate</a></li>
+                </ul>
+                </nav>
+            
+        </header>
+        <div class="book_tkt">Reserve Your Spot</div>
+        <img class="image" src="Images/f13.jpg" alt="Image of a turtle ">
+        <div class="sub_headings">Personal Details</div>
+        
+        <div class="Form">
+
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" required>
+          <br><br>
+
+          <label for="mobileNumber">Mobile Number:</label>
+          <input type="tel" id="mobileNumber" required>
+          <div id="countryDropdown"></div>
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <br><br>
+
+          <label for="confirmEmail">Confirm Email:</label>
+          <input type="email" id="confirmEmail" required>
+          <br><br>
+          <label for="gender">Gender:</label>
+          <select id="gender">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select>
+          <br><br>
+
+          <button id="storePersonalDetails">Save Personal Details</button>
+
+      </div>  
+      <br>
+      <div class="back_continue_container">
+        <a href="tickets.html">Go Back</a>
+        <a href="payment.html">Continue</a>
+      </div>
+      
+
+      <script src="javas/myscript_details.js"></script>
+      </body>
+  </html>

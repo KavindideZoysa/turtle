@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+  <html lang="en">
+    <head>
+      <!---------------------------------------------------------------------------->
+      <link rel="icon" type="image/x-icon" href="Images/icon.jpeg">
+      <!---------------------------------------------------------------------------->
+      <meta charset="UTF-8">
+      <meta name="description" content="Home page">
+      <meta name="keywords" content="HTML, CSS">
+      <meta name="author" content="Kavindi De Zoysa">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="stylesheet" href="styles/style.css">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gravitas+One&family=Marmelad&family=Mogra&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <title>
+        Home Page
+      </title>
+    </head>
+
+    <body class ="ticket">
+        <header>
+            <a href="index.html"><img src="Images/icon.jpeg" class="logo" alt="Image of a turtle "></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">Menu</label>
+                <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Turtle Catergories</a></li>
+                    <li><a href="threats.html">Threats</a></li>
+                    <li><a href="hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
+                    <li><a href="bentota.html">Other Turtle Hatcheries</a>
+                    <ul>
+                    <li><a href="bentota.html">Bentota</a></li>
+                    <li><a href="kosgoda.html">Kosgoda</a></li>
+                    </ul></li>
+                <li><a href="purchaseAndDonate.html">Purchase and Donate</a></li>
+                </ul>
+                </nav>
+            
+        </header>
+
+            <div class="book_tkt">Reserve Your Spot</div>
+            <img class="image" src="Images/f13.jpg" alt="Image of a turtle ">
+            <div class="sub_headings">Buy Tickets</div>
+
+            <div class="grid_container">
+                <p id="paragraph_ticket">
+                    Discover the wonders of sea turtles at our Hikkaduwa Turtle Hatchery! Book your tickets now for a unique and meaningful 
+                    experience. Join our conservation efforts and witness the miracle of life up close. Secure your spot today!!! </p>
+
+
+                <div class="container">
+            
+                    <div class="section_title"> When are you planning to visit?</div>
+                        <input type="date" id="dateInput">
+                        
+                    <br><br>
+                    <div class="section_title">Guest Count</div>
+                        <div class="gc">
+                            <label for="foreignerAdult" class="label_FA">Foreigner Adult:</label>
+                            <button onclick="decreaseQuantity('foreignerAdult')">-</button>
+                            <span id="foreignerAdultQuantity">0</span>
+                            <button onclick="increaseQuantity('foreignerAdult')">+</button>
+                        </div>
+                    
+                        <div class="gc">
+                            <label for="foreignerChild">Foreigner Child:</label>
+                            <button onclick="decreaseQuantity('foreignerChild')">-</button>
+                            <span id="foreignerChildQuantity">0</span>
+                            <button onclick="increaseQuantity('foreignerChild')">+</button>
+                        </div>
+
+                        <div class="gc">
+                            <label for="slAdult">Local Adult:</label>
+                            <button onclick="decreaseQuantity('slAdult')">-</button>
+                            <span id="slAdultQuantity">0</span>
+                            <button onclick="increaseQuantity('slAdult')">+</button>
+                        </div>
+                    
+                        <div class="gc">
+                            <label for="slChild">Local Child :</label>
+                            <button onclick="decreaseQuantity('slChild')">-</button>
+                            <span id="slChildQuantity">0</span>
+                            <button onclick="increaseQuantity('slChild')">+</button>
+                        </div>
+                        <br>
+
+                    <div class="section_title">Select your Time slot</div>
+                        <div class="duration">
+                            <select id="time" multiple>
+                                <option value="07" class="optionsT">07:00 AM - 08:00 AM</option>
+                                <option value="08" class="optionsT">08:00 AM - 09:00 AM</option>
+                                <option value="09" class="optionsT">09:00 AM - 10:00 AM</option>
+                                <option value="10" class="optionsP">10:00 AM - 11:00 AM(Peak Hours)</option>
+                                <option value="11" class="optionsP" >11:00 AM - 12:00 PM</option>
+                                <option value="12" class="optionsP">12:00 PM - 01:00 PM</option>
+                                <option value="01" class="optionsT">01:00 PM - 02:00 PM</option>
+                                <option value="02" class="optionsT">02:00 PM - 03:00 PM</option>
+                                <option value="03" class="optionsP">03:00 PM - 04:00 PM(Peak Hours)</option>
+                                <option value="04" class="optionsP">04:00 PM - 05:00 PM</option>
+                                <option value="05" class="optionsP">05:00 PM - 06:00 PM</option>
+                            </select>
+                        </div>
+                    <br>
+                    <button id="saveBtn">Save Your Travel Details </button>  
+
+                </div>
+            </div>
+            
+            <table id="charges">
+                <tr>
+                  <th>Category</th>
+                  <th>Normal Hour Charge (USD)</th>
+                  <th>Peak Hour Charge (USD)</th>
+                </tr>
+
+                <tr>
+                  <td>Foreigner Adult</td>
+                  <td>10</td>
+                  <td>13</td>      </tr>
+                  <tr>
+                    <td>Foreigner Child</td>
+                    <td>5</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>SL Adult</td>
+                    <td>4</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>SL Child</td>
+                    <td>2</td>
+                    <td>3</td>
+              </table>
+              <br>
+
+
+              <table class="summary_table">
+                <tr>
+                    <th>Data</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td id="currentDate"></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td id="timeslots">07.00 am to 08.00 am</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td id="t_duration">1 hrs (01 Normal : 00 Peak)</td>
+                </tr>
+                <tr>
+                    <th>Tickets</th>
+            <th>Charges</th>
+        </tr>
+        <tr>
+            <td id="guest-type">1 Foreigner Adult</td>
+            <td id="cost">$10</td>
+        </tr>
+        <tr>
+            <td>Total Payable</td>
+            <td id="totalPayable">$10</td>
+        </tr>
+    </table>
+ <br>
+               <div class="back_continue_container">
+                <a href="hikkaduwa.html">Go Back</a>
+                <a href="details.html">Continue</a>
+              </div> 
+              
+     <script src="javas/myscript_tickets.js"></script>
+
+    </body>
+</html>    

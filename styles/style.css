@@ -22,7 +22,7 @@ header{
     top: 0; left: 0; right: 0;
     background-color: #78c4b3;
     border-radius: 10px;
-    padding: 20px 7%;
+    padding: 1px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,20 +68,20 @@ header label{
     color: white; 
     cursor: pointer;
     display: none;
- }
-body{
+}
+#Homepage_body{
   background-image: url(../Images/f15.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   backdrop-filter: blur(10px);
 }
- #flag {
+#flag {
     color: rgb(173, 146, 95);
     font-size: 60px;
     margin: 0;
     font-family: 'Mogra', cursive;
-  }
+}
   /*-------------------------------------------------------------------*/
   
   /*The responsive image */
@@ -283,29 +283,29 @@ body{
     background-color: rgba(178, 221, 231, 0.5);
   }
   /*The table */
-table {
+#t1 table {
     margin: auto;
     margin-bottom: 20px;
   }
   /*-----------------------------------------*/
-   table, td,tr,th {
+#t1 table, td,tr,th {
     border: 3px solid rgb(104, 67, 18);
     border-collapse: collapse;
     width: 80%;
    }
   /*-----------------------------------------*/
-   tr {
+   #t1 tr {
     font-size: 20px;
     text-align: center;
     background-color: rgba(133, 90, 25,0.5);
     color: black;
    }
   /*-----------------------------------------*/
-   tr:nth-child(even) {
+   #t1 tr:nth-child(even) {
     background-color: rgba(255, 255, 255,0.6);
    }
   /*-----------------------------------------*/
-   th, tfooter {
+   #t1 th, tfooter {
     color: #080a0a;
     background-color: rgba(136, 88, 17,0.8);
     font-family: 'Marmelad', sans-serif;
@@ -610,6 +610,27 @@ flex: 1;
         margin-left: 50px;
     
     }
+    #buy_tickets{
+      margin-left:10%;
+      margin-bottom: 20px;
+      font-size: 30px;
+      border: 3px solid black;
+      color: #000000;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: background-color 0.3s; 
+      padding:5px 5px;
+      background-color:#928b7c ;
+      text-decoration: none;
+    }
+  
+    #buy_tickets:hover {
+      background-color: #757065; 
+    }
+
+    #buy_tickets:active {
+      background-color: #969084; 
+    }
     /*-------------------------------------------------------------------*/
     
     /* Useful tips -Topic */
@@ -778,4 +799,312 @@ flex: 1;
   text-align: center;
   background-color: rgba(105, 76, 38, 0.5);
   padding-block: 50px ;
+}
+
+/*................................................................................*/
+/*................................................................................*/
+/*................................................................................*/
+/* The CSS of the Ticket Pages*/
+
+.ticket{
+  background-image: url(../Images/cover.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+
+.image{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  }
+
+.grid_container {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: center; /* Align items vertically in the center */
+  padding: 20px;
+  margin: auto;
+}
+.container{
+  width: 300px;
+  border: 2px solid grey;
+  margin: auto;
+  padding-inline: 20px;
+  padding-block: 20px;
+  background-color: rgb(122, 168, 163);
+}
+.book_tkt {
+  font-size: 40px;
+  color:#633916;
+  padding:0;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#paragraph_ticket{
+  font-size: 25px;
+  color: aliceblue;
+  width: 80%;
+  padding: 0;
+  margin: auto;
+
+}
+
+.section_title{
+  font-size: 20px;
+  font-weight: 200;
+  font-weight: bolder;
+  color: #633916;
+  margin: auto;
+}
+#dateInput{
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #266e56;
+  border-radius: 4px;
+  outline: none;
+  font-weight: bold;
+}
+
+.gc label {
+  font-weight: bold;
+  font-size: 18px ;
+  color: #000000;
+}
+
+.gc button {
+  background-color: #5086aa;
+  border: 2px solid #266e56;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.gc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#foreignerChildQuantity {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#foreignerAdultQuantity {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#slAdultQuantity{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#slChildQuantity {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+.sl{
+  padding-left: 4px;
+}
+
+.optionsT{
+  font-weight: bold;
+}
+.optionsP{
+  font-weight: bold;
+  color: red;
+}
+
+#time{
+  font-weight: bold;
+  border: 2px solid #266e56;
+  border-radius: 4px;
+  width: 250px;
+  
+}
+
+#saveBtn{
+  border: 3px solid#614d0c;
+  background-color: #b19b54;
+  border-radius: 5px;
+  
+}
+#saveBtn {
+  border: 3px solid #614d0c;
+  background-color: #b19b54;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-inline: auto;
+  transition: background-color 0.3s; 
+  margin-inline: 50px;
+}
+
+#saveBtn:hover {
+  background-color: #b8a67f; 
+}
+
+#saveBtn:active {
+  background-color: #8f7b40; 
+}
+
+#charges table {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align:center ;
+  margin-left: 200px;
+
+}
+/*-----------------------------------------*/
+#charges table, td,tr,th {
+  border: 1px solid rgb(104, 67, 18);
+  border-collapse: collapse;
+  width: 200px;
+  font-weight: bold;
+ }
+/*-----------------------------------------*/
+#charges tr {
+  font-size: 15px;
+  text-align: center;
+  background-color: rgba(133, 90, 25,0.5);
+  color: black;
+ }
+/*-----------------------------------------*/
+#charges tr:nth-child(even) {
+  background-color: rgba(255, 255, 255,0.6);
+ }
+/*-----------------------------------------*/
+#charges th {
+  color: #080a0a;
+  background-color: rgba(136, 88, 17,0.8);
+  font-family: 'Marmelad', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+.back_continue_container{
+  display: flex;
+  padding-inline: 50px ;
+  margin: auto;
+  margin-inline: 20px;
+}
+
+.back_continue_container a{
+  background-color: #b19b54;
+  color: #633916;
+  text-decoration: none;
+  font-size: 20px;
+  margin-inline: 250px;
+  border: 2px solid #c28859;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
+
+.back_continue_container a:hover {
+  background-color: #b8a67f; 
+}
+
+.back_continue_container a:active {
+  background-color: #8f7b40; 
+}
+
+.summary_table{
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin: auto;
+}
+
+
+/*Payment page*/
+
+.Form{
+  border: 2px solid gray;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+}
+
+.Form input{
+  text-align: justify;
+}
+
+.sub_headings{
+  font-size: 30px;
+  color:#056f99;
+  padding:0;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.confirmation_message {
+  margin: auto;
+  font-size: 25px;
+  color: rgb(34, 32, 10);
+  border: 2px solid white;
+  padding: 15px;
+  text-align: center;
+  width: 70%;
+}
+
+.cards{
+  font-weight: bold;
+  font-size: large;
+}
+
+.Form input {
+  border: 2px solid #266e56;
+}
+
+.Form label{
+  font-weight: bold;
+  font-size: large;
+}
+
+#storeCardNumber {
+  border: 3px solid #614d0c;
+  background-color: #b19b54;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-inline: auto;
+  transition: background-color 0.3s; 
+}
+
+#storeCardNumber:hover {
+  background-color: #d1b77e; 
+}
+
+#storeCardNumber:active {
+  background-color: #8f7b40; 
+}
+
+/*Personal Details*/
+#storePersonalDetails {
+  border: 3px solid #614d0c;
+  background-color: #b19b54;
+  border-radius: 5px;
+  margin-inline: auto;
+  font-weight: bold;
+  transition: background-color 0.3s; 
+}
+
+#storePersonalDetails:hover {
+  background-color: #d1b77e; 
+}
+
+#storePersonalDetails:active {
+  background-color: #8f7b40; 
 }

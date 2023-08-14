@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+  <html lang="en">
+    <head>
+      <!---------------------------------------------------------------------------->
+      <link rel="icon" type="image/x-icon" href="Images/icon.jpeg">
+      <!---------------------------------------------------------------------------->
+      <meta charset="UTF-8">
+      <meta name="description" content="Home page">
+      <meta name="keywords" content="HTML, CSS">
+      <meta name="author" content="Kavindi De Zoysa">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="stylesheet" href="styles/style.css">
+      <!---------------------------------------------------------------------------------------->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gravitas+One&family=Marmelad&family=Mogra&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <title>
+        Home Page
+      </title>
+    </head>
+
+    <body class ="ticket">
+        <header>
+            <a href="index.html"><img src="Images/icon.jpeg" class="logo"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">Menu</label>
+                <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Turtle Catergories</a></li>
+                    <li><a href="threats.html">Threats</a></li>
+                    <li><a href="hikkaduwa.html">Hikkaduwa Turtle Hatcheries</a></li>
+                    <li><a href="bentota.html">Other Turtle Hatcheries</a>
+                    <ul>
+                    <li><a href="bentota.html">Bentota</a></li>
+                    <li><a href="kosgoda.html">Kosgoda</a></li>
+                    </ul></li>
+                <li><a href="purchaseAndDonate.html">Purchase and Donate</a></li>
+                </ul>
+                </nav>
+            
+        </header>
+        <div class="book_tkt">Reserve Your Spot</div>
+        <img class="image" src="Images/f13.jpg" alt="Image of a turtle ">
+        <div class="sub_headings">Confirmation</div>
+
+        <div class="confirmation_message">
+          Thank you for your order. Your order has been confirmed with us. You can show this confirmation at the entrance. Following is the summary of your order.
+        </div>
+        <br><br>
+
+        <table class="summary_table">
+          <tr>
+              <th>Data</th>
+              <th> Values</th>
+          </tr>
+          <tr>
+              <td>Name</td>
+              <td  id="C_name"></td>
+          </tr>
+          <tr>
+              <td>Date</td>
+              <td id="C_date">25/02/2023</td>
+          </tr>
+          <tr>
+              <td>Time</td>
+              <td id="C_time">08.00 am to 11.00 am</td>
+          </tr>
+          <tr>
+              <td>Duration</td>
+              <td id="C_duration">3 hrs (02 Normal : 01 Peak)</td>
+          </tr>
+          <tr>
+              <td>Mobile</td>
+              <td id="C_mobile"></td>
+          </tr>
+          <tr>
+              <td>Email</td>
+              <td id="C_email"></td>
+          </tr>
+          <tr>
+              <td>Gender</td>
+              <td id="C_gender"></td>
+          </tr>
+          <tr>
+              <th>Tickets</th>
+              <th>Charges</th>
+          </tr>
+          <tr>
+              <td>2 SL Adult</td>
+              <td id="C_sl_adult">$</td>
+          </tr>
+          <tr>
+              <td>3 SL Child</td>
+              <td id="C_sl_child">$</td>
+          </tr>
+          <tr>
+              <td>1 Foreigner Adult</td>
+              <td id="C_Fadult">$</td>
+          </tr>
+          <tr>
+              <td>2 Foreigner Child</td>
+              <td id="C_Fchild">$</td>
+          </tr>
+          <tr>
+              <td>3 Infant</td>
+              <td>Free</td>
+          </tr>
+          <tr>
+              <td>Total Payable</td>
+              <td id="C_total">$</td>
+          </tr>
+      </table>
+
+      <script src="javas/myscript_confirmation.js"></script>
+
+    </body>
+</html>    
+      
+
+
+      
